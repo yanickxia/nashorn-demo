@@ -51,7 +51,7 @@ public class NashornHttpRequestTransformTest {
         }
     }
 
-    private static String readFile(String file, Charset encoding)
+    static String readFile(String file, Charset encoding)
             throws IOException, URISyntaxException {
         byte[] encoded = Files.readAllBytes(Paths.get(ClassLoader.getSystemResource(file).toURI()));
         return new String(encoded, encoding);
